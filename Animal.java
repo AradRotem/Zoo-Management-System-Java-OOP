@@ -10,7 +10,11 @@ public class Animal {
         this.id = nextId++;
         this.age = age;
     }
-
+    
+    public Animal(){
+        this.id = nextId++;
+    }
+    
     public int getId() { return id; }
     public int getAge() {return age; }
     public void setAge(int age) {

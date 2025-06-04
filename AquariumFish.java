@@ -26,9 +26,10 @@ public class AquariumFish extends Animal {
 
 
 
-//    public AquariumFish(){
-//        this.colorsArray=new String[0];
-//    }
+  public AquariumFish(){
+        super();
+        this.colorsArray=new String[0];
+   }
 //
 //    public AquariumFish(int age, float length) {
 //        this.age=age;

@@ -26,7 +26,7 @@ public class Main {
             "Show Predators",
             "Show Fishes",
             "Feed The Animals",
-            "Hear The Animals",
+          //  "Hear The Animals",
             "Age All Animals One Year"
     };
     public static Scanner s = new Scanner(System.in);
@@ -73,10 +73,10 @@ public class Main {
                 case 8:
                     FeedTheAnimals();
                     break;
-                case 9:
+             //   case 9:
                   //  HearTheAnimals();
-                    break;
-                case 10:
+                  //  break;
+                case 9:
                     AgeOneYear();
                     System.out.println("All animals have aged one year.");
                     break;
@@ -161,6 +161,7 @@ public class Main {
                 temp = s.next();
             }
         }
+        Animal a= new Animal(age);
         Penguin p = new Penguin(name, age, height, false);//the leader is already chosen so every new penguin cant be the leader
         Object[] newAnimalArray = zoo.getAnimalArray();
 
@@ -248,6 +249,7 @@ public class Main {
                 temp = s.next();
             }
         }
+        Animal a= new Animal(age);
         Lion lion = new Lion(name, age, weight, isMale);
         Object[] newAnimalArray = zoo.getAnimalArray();
         if (zoo.getAnimalArray()[zoo.getAnimalArray().length - 1] != null) {//multiplies the array if it's full(required from the instructions)
@@ -320,6 +322,7 @@ public class Main {
                 temp = s.next();
             }
         }
+        Animal a= new Animal(age);
         Tiger tiger = new Tiger(name, age, weight, isMale);
         Object[] newAnimalArray = zoo.getAnimalArray();
         if (zoo.getAnimalArray()[zoo.getAnimalArray().length - 1] != null) {//multiplies the array if it's full(required from the instructions)
@@ -382,6 +385,7 @@ public class Main {
             }
         }
         openPlace = zoo.FindOpenPlace(zoo.getAnimalArray());
+        Animal a= new Animal(age);
         if (fishtype.equals("Simple")) {//if the user chose to insert a Simple fish to the Aquarium
             System.out.println("Enter fish pattern(Dots, Strips, Stains, Blank)");
             pattern = s.next();

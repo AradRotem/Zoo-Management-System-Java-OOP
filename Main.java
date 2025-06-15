@@ -42,7 +42,6 @@ public class Main {
    public static void run() {
         int choice;
         do {
-
             choice = showMenu();
 
             switch (choice) {

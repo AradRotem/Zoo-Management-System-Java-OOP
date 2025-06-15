@@ -63,21 +63,30 @@ public class Main {
                     break;
                 case 5:
                     showPenguin();
+                    DBManager.showPenguinFromDB();
+
                     break;
                 case 6:
                     showPredators();
+                    DBManager.showPredatorsFromDB();
+
                     break;
                 case 7:
                     showFish();
+                    DBManager.showAquariumFishFromDB();
                     break;
                 case 8:
                     FeedTheAnimals();
+                    DBManager.FeedTheAnimalsFromDB();
+
                     break;
                 case 9:
                   //  HearTheAnimals();
                     break;
                 case 10:
                     AgeOneYear();
+                    DBManager.ageOneYear();
+
                     System.out.println("All animals have aged one year.");
                     break;
                 default:
@@ -494,6 +503,7 @@ public class Main {
         }
     }
 
+    
     private static void showPredators() {
         if (zoo.getLionArray().length == 0) {
             System.out.println("There are no Lions in the zoo");
@@ -595,6 +605,7 @@ public class Main {
         int tigerFood = zoo.tigerFeedCount();
         System.out.println("The Tigers ate " + tigerFood + " kg of meat for "+zoo.getArrayLength(zoo.getTigerArray()) + " Tigers");
         zoo.HappyAnimals();//after feeding the animals, their happiness becomes 100
+        
     }
 
 //    private static void HearTheAnimals() {
@@ -604,5 +615,7 @@ public class Main {
     private static void AgeOneYear() {
         zoo.AgeOneYear();
     }
+
+    
 
 }

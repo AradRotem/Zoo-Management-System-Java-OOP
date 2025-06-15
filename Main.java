@@ -39,7 +39,7 @@ public class Main {
         s.close();
     }
 
-    public static void run() {
+   public static void run() {
         int choice;
         do {
 
@@ -63,21 +63,30 @@ public class Main {
                     break;
                 case 5:
                     showPenguin();
+                    DBManager.showPenguinFromDB();
+
                     break;
                 case 6:
                     showPredators();
+                    DBManager.showPredatorsFromDB();
+
                     break;
                 case 7:
                     showFish();
+                    DBManager.showAquariumFishFromDB();
                     break;
                 case 8:
                     FeedTheAnimals();
+                    DBManager.FeedTheAnimalsFromDB();
+
                     break;
                 case 9:
                   //  HearTheAnimals();
                     break;
                 case 10:
                     AgeOneYear();
+                    DBManager.ageOneYear();
+
                     System.out.println("All animals have aged one year.");
                     break;
                 default:
@@ -88,7 +97,6 @@ public class Main {
         }
         while (choice != 0);
     }
-
 
     private static int showMenu() {
         System.out.println("\n Program Menu: \n");
